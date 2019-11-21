@@ -1,0 +1,23 @@
+{
+  "name": "nodejstraining",
+  "version": "1.0.0",
+  "description": "Training Node.JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabeSerafim/NodeJSTraining.git"
+  },
+  "author": "Gabriel Serafim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabeSerafim/NodeJSTraining/issues"
+  },
+  "homepage": "https://github.com/GabeSerafim/NodeJSTraining#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}
