@@ -19,5 +19,8 @@
   "homepage": "https://github.com/GabeSerafim/NodeJSTraining#readme",
   "devDependencies": {
     "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
