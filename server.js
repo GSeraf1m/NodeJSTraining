@@ -1,9 +1,16 @@
-const http = require('http');
-
 const express = require('express');
+const bodyParser = require('body-parser')
+
+const routes = require('./routes/index.js');
 
 const app = express();
 
-const server = http.createServer(app);
+app.use((req, res, next) => {
+    console.log("First Middleware");
+    bodyParser.urlencoded({extended:false});
+    next()
+})
 
-server.listen(8080);
+app.use(routes)
+
+app.listen(8080);
