@@ -24,10 +24,10 @@ const csrfProtection = csrf();
 
 const fileStorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'images');
+    cb(null, './images');
   },
   filename: (req, file, cb) => {
-    cb(null, new Date().toISOString() + '-' + file.originalname);
+    cb(null, new Date().toISOString().replace(/:/g,'-') + '-' + file.originalname);
   }
 });
 
@@ -99,7 +99,7 @@ app.get('/500', errorController.get500);
 
 app.use(errorController.get404);
 
-app.use((error, req, res, next) => {
+app.use((req, res, next) => {
   // res.status(error.httpStatusCode).render(...);
   // res.redirect('/500');
   res.status(500).render('500', {

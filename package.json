@@ -1,14 +1,14 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "nodejs-training",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "Treinando o Node",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "start-server": "node server.js"
   },
-  "author": "Maximilian Schwarzmüller",
+  "author": "Gabriel Serafim",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.18.3"
